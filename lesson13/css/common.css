@@ -1,0 +1,19 @@
+.--background{
+	background-color: #412672;
+	color: #fff;
+}
+.title{
+	font-size: 38px;
+	font-weight: 400;
+	/* display: inline-flex; */
+	gap: 0px 10px;
+	span{
+		font-weight: 700;
+	}
+}
+.title--column{
+	flex-direction: column;
+}
+.title--center{
+	text-align: center;
+}
