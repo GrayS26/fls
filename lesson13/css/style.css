@@ -127,7 +127,7 @@ body {
 }
 .faculty__item::before{
 	content: '';
-	background: url('/img/check.svg') center / cover no-repeat;
+	background: url('../img/check.svg') center / cover no-repeat;
 	flex: 0 0 29px;
 	width: 29px;
 	height: 29px;
