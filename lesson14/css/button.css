@@ -1,0 +1,24 @@
+.button {
+	display: inline-block;
+	padding: 15px;
+	width: 100%;
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.20; /* 19.2px */
+	border-radius: 43px;
+	color: #fff;
+	background-color: #00B207;
+	border: 1px solid #00B207;
+	transition: background-color 0.3s, color 0.3s;
+}
+.button:focus-visible {
+	outline: none;
+	box-shadow: 0 0 5px 1px #00B207;
+}
+@media (any-hover: hover) {
+	.button:hover {
+		color: #00B207;
+		background-color: #fff;
+	}
+}

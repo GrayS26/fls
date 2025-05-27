@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Form - скринька (обгортка) для input-ів</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<div class="page__container">
+					<div class="page__content content-page">
+						<div class="content-page__item"> 
+							<h1 class="content-page__title title">Billing Information</h1>
+							<form id="information-form" action="#" class="content-page__form form">
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--triple">
+									<label for="first-name" class="form__label">First name</label>
+									<input id="first-name" autocomplete="off" type="text" name="form[]" placeholder="Your first name" class="form__input input">
+								</div>
+								<div class="form__box form__box--triple">
+									<label for="last-name" class="form__label">Last name</label>
+									<input id="last-name" autocomplete="off" type="text" name="form[]" placeholder="Your last name" class="form__input input">
+								</div>
+								<div class="form__box form__box--triple">
+									<label for="company-name" class="form__label">Company Name <span>(optional)</span></label>
+									<input id="company-name" autocomplete="off" type="text" name="form[]" placeholder="Company name" class="form__input input">
+								</div>
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--single">
+									<label for="street-address" class="form__label">Street Address</label>
+									<input id="street-address" autocomplete="off" type="email" name="form[]" placeholder="Email" class="form__input input">
+								</div>
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--triple">
+									<label for="country" class="form__label">Country / Region</label>
+									<div class="form__select">
+										<select id="country" class="form__input" name="form[]" data-class-modif="form">
+											<option value="1" selected>states</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__box form__box--triple">
+									<label for="states" class="form__label">States</label>
+									<div class="form__select">
+										<select id="states" class="form__input" name="form[]" data-class-modif="form">
+											<option value="1" selected>states</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__box form__box--triple">
+									<label for="zip-code" class="form__label">Zip Code</label>
+									<input id="zip-code" autocomplete="off" type="password" name="form[]" placeholder="Zip Code" class="form__input input">
+								</div>
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--double">
+									<label for="email" class="form__label">Email</label>
+									<input id="email" autocomplete="off" type="email" name="form[]" placeholder="Email Address" class="form__input input">
+								</div>
+	
+								<div class="form__box form__box--double">
+									<label for="phone" class="form__label">Phone</label>
+									<input id="phone" autocomplete="off" type="phone" name="form[]" placeholder="Phone" class="form__input input">
+								</div>
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--single checkbox">
+									<input id="different-address" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="different-address" class="checkbox__label"><span class="checkbox__text">Ship to a different address</span></label>
+								</div>
+								<!-- 
+									<div class="form__box form__box--triple"></div>
+									<div class="form__box form__box--double"></div>
+									<div class="form__box form__box--single"></div>
+								-->
+							</form>
+						</div>
+						<div class="content-page__item">
+							<h1 class="content-page__title title">Additional Info</h1>
+							<form id="information-form" action="#" class="content-page__form form">
+								<!--=====================================================================================================================-->
+								<div class="form__box form__box--single">
+									<form id="order-notes" action="#">
+										<label for="notes" class="form__label">Order Notes (Optional)</label>
+										<textarea id="notes" name="form[]" placeholder="Notes about your order, e.g. special notes for delivery" class="form__input input"></textarea>
+									</form>
+								</div>
+								<!--=====================================================================================================================-->
+							</form>
+						</div>
+					</div>
+					<div class="page__basket basket">
+						<h2 class="basket__title title">Order Summery</h2>
+						<div class="basket__product product-basket">
+							<div class="product-basket__item">
+								<div class="product-basket__image"><img src="img/product/01.jpg" alt="product"></div>
+								<div class="product-basket__name">Green Capsicum<span>x5</span></div>
+								<div class="product-basket__cost">$70.00</div>
+							</div>
+							<div class="product-basket__item">
+								<div class="product-basket__image"><img src="img/product/02.jpg" alt="product"></div>
+								<div class="product-basket__name">Red Capsicum<span>x5</span></div>
+								<div class="product-basket__cost">$14.00</div>
+							</div>
+						</div>
+						<div class="basket__price price-basket">
+							<div class="price-basket__item">
+								<div class="price-basket__title">Subtotal:</div>
+								<div class="price-basket__cost">$84.00</div>
+							</div>
+							<div class="price-basket__item">
+								<div class="price-basket__title">Shipping:</div>
+								<div class="price-basket__cost">Free</div>
+							</div>
+							<div class="price-basket__item">
+								<div class="price-basket__title">Total:</div>
+								<div class="price-basket__cost price-basket__cost--bold">$84.00</div>
+							</div>
+						</div>
+						<div class="basket__payment">
+							<h2 class="basket__title title">Order Summery</h2>
+							<div class="options">
+								<div class="options__item">
+									<input id="cash" class="options__input" checked type="radio" value="1" name="option">
+									<label for="cash" class="options__label"><span class="options__text">Cash on Delivery</span></label>
+								</div>
+								<div class="options__item">
+									<input id="paypal" class="options__input" type="radio" value="2" name="option">
+									<label for="paypal" class="options__label"><span class="options__text">Paypal</span></label>
+								</div>
+								<div class="options__item">
+									<input id="amazon" class="options__input" type="radio" value="2" name="option">
+									<label for="amazon" class="options__label"><span class="options__text">Amazon Pay</span></label>
+								</div>
+							</div>
+						</div>
+						<button class="basket__button button">Place Order</button>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+@media (max-width: 934px){
+    .page__basket{
+        flex: 0 0 55%;
+    }
+    .page__content{
+        flex: 0 0 45%;
+    }
+}
