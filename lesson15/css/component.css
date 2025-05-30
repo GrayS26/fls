@@ -1,0 +1,83 @@
+.title{
+    margin-bottom: 20px; /* на усьому макеті тайтл такого розміру має 20px, тому допускаю такий умовний відступ (+ забезпечення автономності на нових сторінках) */
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.5; /* 36px */
+}
+/* ============================================ */
+
+.link {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #00B207;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 24px */
+    svg{
+        path{
+            transition: stroke 0.3s;
+        }
+    }
+}
+@media (any-hover: hover) {
+	.link:hover{
+		color: #2C742F;
+        svg{
+            path{
+                stroke: #2C742F;
+            }
+        }
+	}
+}
+
+/* ============================================ */
+
+.title-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.title-section--center{
+    text-align: center;
+}
+.title-section__title {
+    flex: 1 1 100%;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2; /* 38.4px */
+}
+.title-section__link{}
+
+@media (max-width: 768.98px){
+    .title-section__title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 479.98px){
+    .title-section {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 479.98px){
+    .title-section__link{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* ============================================ */
+
+.--grayscale {
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    cursor: default;
+}
+
+/* ============================================ */
